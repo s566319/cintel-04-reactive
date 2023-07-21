@@ -20,6 +20,11 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
+        ui.input_numeric('MT_CARS_MAX_HP', 'Maximum Horsepower (hp):', value = 270),
+        ui.input_checkbox('MT_CARS_GEARS_3', '3 Gears', value = True),
+        ui.input_checkbox('MT_CARS_GEARS_4', '4 Gears', value = True),
+        ui.input_checkbox('MT_CARS_GEARS_5', '5 Gears', value = True),
+
         ui.tags.hr(),
         ui.tags.section(
             ui.h3("MT Cars Table"),
