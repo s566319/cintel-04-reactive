@@ -35,6 +35,45 @@ logger, logname = setup_logger(__name__)
 app_ui = ui.page_navbar(
     shinyswatch.theme.lumen(),
     ui.nav(
+        "Home",
+        ui.layout_sidebar(
+            ui.panel_sidebar(
+                ui.h2("Input Area"),
+                ui.tags.hr(),
+                ui.h3("User Interaction Here"),
+                ui.input_text("name_input", "What's your name?", placeholder="Your Name"),
+                ui.input_text(
+                    "country_input",
+                    "Enter Your Favorite Country to Visit",
+                    placeholder="Fav Country",
+                ),        
+                ui.tags.hr(),
+            ),
+            ui.panel_main(
+                ui.h2("New Data Exploration Tabs (see above)"),
+                ui.tags.hr(),
+                ui.tags.ul(
+                    ui.tags.li(
+                        "To explore MotorTrend Car dataset, click the 'MT_Cars' tab."
+                    ),
+                    ui.tags.li(
+                        "To explore the Penguins Dataset, click the 'Penguins' tab."
+                    ),
+                    ui.tags.li(
+                        "To explore the Iris Dataset, click the 'Iris' tab."
+                    ),
+                ),
+                ui.tags.hr(),
+                ui.h2("Reactive Output"),
+                ui.tags.hr(),
+                ui.output_text_verbatim("welcome_output"),
+                ui.output_text_verbatim("insights_output"),
+                ui.tags.hr(),
+            ),
+        ),
+    ),
+
+    ui.nav(
         "Flights",
         ui.layout_sidebar(
             get_flights_inputs(),
