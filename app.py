@@ -18,7 +18,7 @@ from flights_ui_outputs import get_flights_outputs
 
 from mtcars_server import get_mtcars_server_functions
 from mtcars_ui_inputs import get_mtcars_inputs
-from mtcars_ui_outputs import get_mtcars_outputs
+from mtcars_ui_outputs1 import get_mtcars_outputs
 
 from penguins_server import get_penguins_server_functions
 from penguins_ui_inputs import get_penguins_inputs

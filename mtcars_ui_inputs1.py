@@ -20,13 +20,10 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
-        ui.input_numeric(
-        "MTCARS_HP_MAX",
-        "Cars HP (hp):",
-        value=300.0
-        ),
-        ui.input_checkbox("TRANSMISSION_TYPE_AUTO", "Automatic", value=True),
-        ui.input_checkbox("TRANSMISSION_TYPE_MANUAL", "Manual", value=True),
+        ui.input_numeric('MT_CARS_MAX_HP', 'Maximum Horsepower (hp):', value = 290),
+
+        ui.input_checkbox("Auto_Transmission", "Automatic", value=True),
+        ui.input_checkbox("Manual_Transmission", "Manual", value=True),
 
         ui.tags.hr(),
         ui.tags.section(
