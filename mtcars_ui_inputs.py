@@ -22,7 +22,7 @@ def get_mtcars_inputs():
         ),
         ui.input_numeric(
         "MTCARS_HP_MAX",
-        "Cars HP (hp):",
+        "Max Horse Power (HP):",
         value=300.0
         ),
         ui.input_checkbox("TRANSMISSION_AUTO", "Automatic", value=True),
