@@ -35,8 +35,8 @@ def get_mtcars_server_functions(input, output, session):
     @reactive.event(
         input.MTCARS_MPG_RANGE,
         input.MTCARS_HP_MAX,
-        input.TRANSMISSION_TYPE_AUTO,
-        input.TRANSMISSION_TYPE_MANUAL,
+        input.TRANSMISSION_AUTO,
+        input.TRANSMISSION_MANUAL,
         )
     def _():
         df = original_df.copy()
@@ -61,9 +61,9 @@ def get_mtcars_server_functions(input, output, session):
         df = df[cars_hp_filter]
 
         show_transmission_list = []
-        if input.TRANSMISSION_TYPE_AUTO():
+        if input.TRANSMISSION_AUTO():
             show_transmission_list.append(0)
-        if input.TRANSMISSION_TYPE_MANUAL():
+        if input.TRANSMISSION_MANUAL():
             show_transmission_list.append(1)
         transmission_filter = df["am"].isin(show_transmission_list)
         df = df[transmission_filter]

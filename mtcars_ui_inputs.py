@@ -25,8 +25,8 @@ def get_mtcars_inputs():
         "Cars HP (hp):",
         value=300.0
         ),
-        ui.input_checkbox("TRANSMISSION_TYPE_AUTO", "Automatic", value=True),
-        ui.input_checkbox("TRANSMISSION_TYPE_MANUAL", "Manual", value=True),
+        ui.input_checkbox("TRANSMISSION_AUTO", "Automatic", value=True),
+        ui.input_checkbox("TRANSMISSION_MANUAL", "Manual", value=True),
 
         ui.tags.hr(),
         ui.tags.section(
