@@ -54,13 +54,16 @@ app_ui = ui.page_navbar(
                 ui.tags.hr(),
                 ui.tags.ul(
                     ui.tags.li(
+                        "To explore Flights dataset, click the 'Fligts' tab."
+                    ),
+                    ui.tags.li(
                         "To explore MotorTrend Car dataset, click the 'MT_Cars' tab."
                     ),
                     ui.tags.li(
                         "To explore the Penguins Dataset, click the 'Penguins' tab."
                     ),
                     ui.tags.li(
-                        "To explore the Iris Dataset, click the 'Iris' tab."
+                        "To explore the Relationship Dataset, click the 'Relationships' tab."
                     ),
                 ),
                 ui.tags.hr(),
